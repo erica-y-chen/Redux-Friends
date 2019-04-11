@@ -1,7 +1,7 @@
 import React from 'react';
 import {getFriend} from '../actions';
 import { withRouter } from 'react-router-dom';
-import { connect } from 'react-redux;'
+import { connect } from 'react-redux';
 
 class Friends extends React.Component {
 
@@ -17,9 +17,10 @@ class Friends extends React.Component {
 }
 
 
-const mapStateToProps = ({ friends, fetchingFriends });
+const mapStateToProps = ({ friends, fetchingFriends }) => ({ friends, fetchingFriends});
 
 export default withRouter (
     connect(mapStateToProps,
         {getFriend})(Friends)
 )
+

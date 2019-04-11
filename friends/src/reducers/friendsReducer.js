@@ -4,7 +4,7 @@ import {
     LOGIN_SUCCESS,
     FETCHING, 
     SUCCESS, 
-    FAILURE} from "../actions";
+    FAILURE } from "../actions";
 
 const initialState = {
     deletingFriend: false,
